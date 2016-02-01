@@ -7,13 +7,22 @@
 dwmTimeseries(xData, y, m, d, aggFun)
 }
 \arguments{
-\item{dataset, }{start year, months and day of the timeseries, function how the data should be combined (mean or sum)}
+\item{xData}{dataset}
+
+\item{y}{start year of the timeseries}
+
+\item{m}{start months of the timeseries}
+
+\item{d}{start day of the timeseries}
+
+\item{aggFun}{function how the data should be combined (mean or sum)}
 }
 \description{
 This function creates daily, weekly, monthly timeseries from daily input data
 }
 \examples{
-dwmTimeseries(xData,y,m,d,aggFun)
+qZ <- read.csv(file= file.path(dataPath,"stations/Zhamashike_runoff_00_14.csv"), header=TRUE, sep=",")
+dwmTimeseries(qZ,2004,04,04,sum)
 }
 \seealso{
 \code{\link{zooreg}} which creates the timeseries
