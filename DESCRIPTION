@@ -1,0 +1,15 @@
+Package: ftimeseries
+Version: 0.1-2
+Date: 2016-01-22
+Title: Timeseries generation
+Author: Bea Developer [aut, cre]
+Maintainer: Constantin Vogt <vogt@hydrosolutions.ch>
+Description: Generate daily weekly monthly timeseries
+Depends: R(>= 3.2.3), zoo, xts
+License: hydrosolutions
+URL: https://www.hydrosolutions.ch
+LazyData: true
+RoxygenNote: 5.0.1
+Encoding: latin1
+
+
