@@ -12,6 +12,6 @@ readAndProcessData(data.input, start.date.input)
 \item{start.date.input}{Date of the first entry of the time series. e.g. c(2000,01,01)}
 }
 \description{
-Reads in time series date read from csv and aggregated values to monthly intervalls. Also produces a rescaled copy of the aggregated time series.
+Reads in time series date read from csv and aggregated values to monthly intervalls.
 }
 

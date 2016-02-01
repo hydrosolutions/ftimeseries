@@ -1,6 +1,6 @@
 #' Read and process data.
 #' 
-#' Reads in time series date read from csv and aggregated values to monthly intervalls. Also produces a rescaled copy of the aggregated time series. 
+#' Reads in time series date read from csv and aggregated values to monthly intervalls. 
 #' @param data.input Time series to be processed.
 #' @param start.date.input Date of the first entry of the time series. e.g. c(2000,01,01)
 #' 
@@ -14,10 +14,10 @@ readAndProcessData <- function(data.input,start.date.input) {
   
   qQ.Mo <- qQts[[3]]
   
-  qQ.Mo.rs <- rescale(qQ.Mo,to=c(-1,1))
+  #qQ.Mo.rs <- rescale(qQ.Mo,to=c(-1,1))
   
   correlation.of.data <- findCorrelation(qQ.Mo)
   
-  out <- list(qQ.Mo,qQ.Mo.rs)
+  out <- list(qQ.Mo)
   return(out)
 }
