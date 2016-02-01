@@ -1,11 +1,17 @@
 #' A Timeseries Function
 #'
 #' This function creates daily, weekly, monthly timeseries from daily input data
-#' @param dataset, start year, months and day of the timeseries, function how the data should be combined (mean or sum)
+#' @param xData dataset
+#' @param y start year of the timeseries
+#' @param m start months of the timeseries
+#' @param d start day of the timeseries
+#' @param aggFun function how the data should be combined (mean or sum)
 #' @seealso \code{\link{zooreg}} which creates the timeseries
 #' @export
 #' @examples
-#' dwmTimeseries(xData,y,m,d,aggFun)
+#' qZ <- read.csv(file= file.path(dataPath,"stations/Zhamashike_runoff_00_14.csv"), header=TRUE, sep=",")
+#' dwmTimeseries(qZ,2004,04,04,sum)
+
 
 dwmTimeseries <- function(xData,y,m,d,aggFun)
 {
@@ -23,3 +29,6 @@ dwmTimeseries <- function(xData,y,m,d,aggFun)
   tsList <- list(qZ.Da,qZ.We,qZ.Mo)
   return(tsList)
 }
+
+
+
