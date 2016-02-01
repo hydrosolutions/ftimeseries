@@ -1,6 +1,6 @@
 #' Read and process data.
 #' 
-#' Reads in time series date read from csv and aggregated values to monthly intervalls. 
+#' Reads in time series date read from csv and aggregates values to monthly intervalls. 
 #' @param data.input Time series to be processed.
 #' @param start.date.input Date of the first entry of the time series. e.g. c(2000,01,01)
 #' 
