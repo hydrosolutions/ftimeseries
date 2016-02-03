@@ -1,5 +1,7 @@
 rm(list = ls()); cat("\014"); graphics.off(); # Clear Workspace
 
+devtools::install_github("hydrosolutions/ftimeseries")
+library(ftimeseries)
 
 wdPath <- "~/Dropbox (hydrosolutions)/RRM_Heihe/R";
 dataPath <- "~/Dropbox (hydrosolutions)/RRM_Heihe/R/data";
