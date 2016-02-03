@@ -23,7 +23,7 @@ qQ <- as.vector(as.matrix(qQ))
 qQ <- na.omit(qQ)
 qQts <- dwmTimeseries(qQ,start.date.input[1],start.date.input[2],start.date.input[3],"mean"); qQ.Mo <- qQts[[3]]
 
-#qQ.Mo.rs <- rescale(qQ.Mo,to=c(-1,1))
+qQ.Mo.rs <- rescale(qQ.Mo,to=c(-1,1))
 
 correlation.of.data <- findCorrelation(qQ.Mo)
 
