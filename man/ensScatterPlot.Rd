@@ -6,18 +6,27 @@
 \usage{
 ensScatterPlot(predD, obsD, h, pointS, plotTitle, xlabel, ylabel, nRuns)
 }
+\arguments{
+\item{h}{DESCRIPTION}
+
+\item{pointS}{DESCRIPTION}
+
+\item{nRuns}{Ensemble size}
+
+\item{predictions}{DESCRIPTION}
+
+\item{observations}{DESCRIPTION}
+
+\item{title}{of the plot DESCRIPTION}
+
+\item{labels}{for x- and DESCRIPTION}
+
+\item{y-axis}{DESCRIPTION}
+}
 \description{
 This function creates a scatter plot from time series data.
- @param predictions
- @param observations
- @param h
- @param pointS
- @param title of the plot, 
- @param labels for x- and 
- @param y-axis
- @param nRuns Ensemble size
- @export
- @examples 
- ensScatterPlot()
+}
+\examples{
+ensScatterPlot() 
 }
 
