@@ -4,11 +4,18 @@
 \alias{ensScatterPlot}
 \title{A Timeseries Function}
 \usage{
-ensScatterPlot(predD, obsD, h, pointS, plotTitle, xlabel, ylabel)
+ensScatterPlot(predD, obsD, h, pointS, plotTitle, xlabel, ylabel, nRuns)
 }
 \description{
 This function creates a scatter plot from time series data.
- @param predictions, observations, h, pointS, title of the plot, labels for x- and y-axis
+ @param predictions
+ @param observations
+ @param h
+ @param pointS
+ @param title of the plot, 
+ @param labels for x- and 
+ @param y-axis
+ @param nRuns Ensemble size
  @export
  @examples 
  ensScatterPlot()

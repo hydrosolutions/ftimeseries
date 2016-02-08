@@ -1,11 +1,18 @@
 #' A Timeseries Function
 #' 
 #'  This function creates a scatter plot from time series data.
-#'  @param predictions, observations, h, pointS, title of the plot, labels for x- and y-axis
+#'  @param predictions
+#'  @param observations
+#'  @param h
+#'  @param pointS
+#'  @param title of the plot, 
+#'  @param labels for x- and 
+#'  @param y-axis
+#'  @param nRuns Ensemble size
 #'  @export
 #'  @examples 
 #'  ensScatterPlot() 
-ensScatterPlot <- function(predD,obsD,h,pointS,plotTitle,xlabel,ylabel)
+ensScatterPlot <- function(predD,obsD,h,pointS,plotTitle,xlabel,ylabel,nRuns)
 {
   le.p <-  length(predD$pred[[1]]);
   qZ.Da.pred.ens <- data.frame(matrix(nrow=le.p*nRuns,ncol = 2))
